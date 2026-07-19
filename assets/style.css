@@ -117,39 +117,17 @@
   }
   section.route h2{font-size:1.6rem; margin-bottom:40px; max-width:32ch;}
   .track{
-    position:relative;
-    padding-left:2px;
-  }
-  .track::before{
-    content:'';
-    position:absolute;
-    left:9px; top:8px; bottom:8px;
-    width:2px;
-    background:linear-gradient(var(--teal), var(--amber));
-    opacity:0.5;
+    border-left:2px solid var(--line);
   }
   .waypoint{
-    position:relative;
-    padding:0 0 36px 36px;
+    padding:0 0 32px 24px;
   }
   .waypoint:last-child{padding-bottom:0;}
-  .waypoint::before{
-    content:'';
-    position:absolute;
-    left:1px; top:4px;
-    width:18px; height:18px;
-    border-radius:50%;
-    background:var(--surface);
-    border:2px solid var(--teal);
-  }
-  .waypoint.current::before{
-    border-color:var(--amber);
-    background:var(--amber);
-  }
   .waypoint .yr{
     font-family:'IBM Plex Mono', monospace;
     font-size:12px; color:var(--muted); margin-bottom:4px;
   }
+  .waypoint.current .yr{color:var(--amber);}
   .waypoint h3{font-size:1.02rem; font-weight:600; margin-bottom:4px;}
   .waypoint p{color:var(--muted); font-size:0.94rem; max-width:52ch;}
 
@@ -165,25 +143,23 @@
     transition:border-color 0.15s ease;
   }
   .card:hover{border-color:var(--teal);}
-  .card-top{
-    display:flex; justify-content:space-between; align-items:baseline;
-    gap:16px; margin-bottom:10px; flex-wrap:wrap;
-  }
-  .card h3{font-size:1.08rem;}
-  .card .tag{
-    font-family:'IBM Plex Mono', monospace;
-    font-size:11px; color:var(--amber);
-    background:rgba(242,169,0,0.08);
-    border:1px solid rgba(242,169,0,0.25);
-    padding:3px 9px; border-radius:4px;
-    white-space:nowrap;
-  }
+  .card h3{font-size:1.08rem; margin-bottom:10px;}
   .card p{color:var(--muted); font-size:0.95rem;}
   .card .stack-line{
     margin-top:14px;
     font-family:'IBM Plex Mono', monospace;
     font-size:12px; color:var(--muted);
   }
+
+  /* Card variants */
+  .card-flat{border-radius:0;}
+  .card-flat .stack-line{text-transform:uppercase; letter-spacing:0.05em; opacity:0.7;}
+
+  .card-accent{border-left:3px solid var(--teal); border-radius:0 var(--radius) var(--radius) 0; padding-left:22px;}
+  .card-accent .stack-line{border-top:1px solid var(--line); padding-top:12px; margin-top:16px;}
+
+  .card-tight{padding:20px 22px 18px;}
+  .card-tight .stack-line{color:var(--amber); opacity:0.65;}
 
   /* ---- Stack ---- */
   section.stack{padding:72px 0; border-bottom:1px solid var(--line);}
