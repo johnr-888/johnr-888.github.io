@@ -12,120 +12,209 @@
 </head>
 <body>
 
-<header class="site">
-  <div class="nav-inner">
-    <div class="nav-mark">John Ryan</div>
-    <nav class="links">
-      <a href="#route">Route</a>
-      <a href="#work">Work</a>
+<aside class="sidebar">
+  <div class="sidebar-inner">
+    <div class="avatar" aria-hidden="true">JR</div>
+    <div class="side-name">John Ryan</div>
+    <div class="side-role">Director of Technology Solutions &amp; Integrations</div>
+    <div class="side-loc">Chicago, IL</div>
+
+    <nav class="side-nav">
+      <a href="#projects">Projects</a>
+      <a href="#impact">Impact</a>
+      <a href="#career">Career Path</a>
       <a href="#exploring">Exploring</a>
-      <a href="#writing">Writing</a>
-      <a href="#stack">Stack</a>
-      <a href="#contact">Contact</a>
+      <a href="#tools">Tools</a>
     </nav>
+
+    <a class="btn primary side-cta" href="mailto:jpryan542@gmail.com">Get in touch</a>
+
+    <div class="side-footer">© 2026 — Built &amp; deployed via GitHub Pages</div>
   </div>
-</header>
+</aside>
 
-<main>
+<main class="content">
   <section class="hero wrap">
-    <div class="doc-ref">Director of Technology Solutions &amp; Integrations — Chicago</div>
-    <h1>Operations. Finance. Technology<span class="accent">.</span></h1>
-    <p class="lede">Fourteen years in freight brokerage has given me experience across all three. I've worked in the operation, managed the financial side of the business, and now lead technology and integrations. That mix shapes how I look at problems, evaluate tools, and decide where automation can actually make a difference.</p>
-    <div class="hero-actions">
-      <a class="btn primary" href="#work">See the work</a>
-      <a class="btn ghost" href="#contact">Get in touch</a>
-    </div>
-  </section>
-
-  <section class="route wrap" id="route">
-    <div class="section-label">Route</div>
-    <h2>Operations. Financial Fluency. Technology Execution.</h2>
-    <div class="track">
-      <div class="waypoint">
-        <div class="yr">Early career</div>
-        <h3>Carrier Operations &amp; Asset Division</h3>
-        <p>Managed day-to-day operations for the company's local and regional asset-based fleet, coordinating drivers, equipment, dispatch, customer service, and operational performance.</p>
+    <div class="hero-inner">
+      <div class="hero-text">
+        <h1>Operations. Finance. Technology<span class="accent">.</span></h1>
+        <div class="hero-actions">
+          <a class="btn primary" href="#projects">See the work</a>
+          <a class="btn ghost" href="#contact">Get in touch</a>
+        </div>
       </div>
-      <div class="waypoint">
-        <div class="yr">Mid career</div>
-        <h3>Business Support Analyst</h3>
-        <p>Led a TMS migration across 60 users. Owned the end-to-end transition to ensure a successful go-live. First-hand experience migrating and managing a team onto new infrastructure.</p>
-      </div>
-      <div class="waypoint">
-        <div class="yr">Finance and Technology chapter</div>
-        <h3>Finance &amp; Accounting Manager, then Director of Finance &amp; Technology</h3>
-        <p>Led key finance operations while also owning technology vendors, integrations, and reporting. Built leadership analytics, improved carrier payment workflows, and helped expand carrier capacity through new technology.</p>
-      </div>
-      <div class="waypoint current">
-        <div class="yr">Since Jan 2026</div>
-        <h3>Director of Technology Solutions &amp; Integrations</h3>
-        <p>Responsible for TMS partnership integrations, AI and workflow automation, vendor strategy, and technology projects across the brokerage. Focused on solving operational problems, reducing manual work, and building tools that deliver operational value.</p>
+      <div class="hero-visual" aria-hidden="true">
+        <svg viewBox="0 0 320 320" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <line x1="40" y1="60" x2="180" y2="60" class="hv-line"/>
+          <line x1="180" y1="60" x2="180" y2="160" class="hv-line"/>
+          <line x1="180" y1="160" x2="280" y2="160" class="hv-line"/>
+          <line x1="180" y1="160" x2="120" y2="240" class="hv-line"/>
+          <line x1="120" y1="240" x2="120" y2="290" class="hv-line"/>
+          <line x1="40" y1="60" x2="40" y2="180" class="hv-line"/>
+          <line x1="40" y1="180" x2="120" y2="240" class="hv-line"/>
+          <line x1="280" y1="160" x2="280" y2="80" class="hv-line"/>
+          <circle cx="40" cy="60" r="4" class="hv-node"/>
+          <circle cx="180" cy="60" r="4" class="hv-node"/>
+          <circle cx="180" cy="160" r="5" class="hv-node hv-node-accent"/>
+          <circle cx="280" cy="160" r="4" class="hv-node"/>
+          <circle cx="120" cy="240" r="4" class="hv-node"/>
+          <circle cx="120" cy="290" r="4" class="hv-node"/>
+          <circle cx="40" cy="180" r="4" class="hv-node"/>
+          <circle cx="280" cy="80" r="4" class="hv-node"/>
+        </svg>
       </div>
     </div>
   </section>
 
-  <section class="work wrap" id="work">
-    <div class="section-label">Selected work</div>
+  <section class="work wrap" id="projects">
+    <div class="section-label">Projects</div>
     <h2>Things I've Built and Led</h2>
 
-    <article class="work-entry">
-      <h3>Carrier Compliance Workflow</h3>
-      <p>Designed and deployed a production carrier compliance workflow using Claude Code, replacing a process spread across emails and chats with a more consistent, auditable system.</p>
-      <p class="entry-meta">Claude Code · Workflow design · Compliance controls · Process Mapping</p>
-    </article>
+    <div class="card-grid">
+      <article class="work-entry">
+        <h3>Carrier Compliance Workflow</h3>
+        <p>Designed and deployed a production carrier compliance workflow using Claude Code, replacing a process spread across emails and chats with a more consistent, auditable system.</p>
+        <p class="entry-meta">Claude Code · Workflow design · Compliance controls · Process Mapping</p>
+      </article>
 
-    <article class="work-entry">
-      <h3>AI Document Processing Tool</h3>
-      <p>Built and launched one of the company's first production AI tools, a browser-based PDF processor that removed a manual multi-step workflow for carrier operations.</p>
-      <p class="entry-meta">Claude · Process automation</p>
-    </article>
+      <article class="work-entry">
+        <h3>AI Document Processing Tool</h3>
+        <p>Built and launched one of the company's first production AI tools, a browser-based PDF processor that removed a manual multi-step workflow for carrier operations.</p>
+        <p class="entry-meta">Claude · Process automation</p>
+      </article>
 
-    <article class="work-entry">
-      <h3>McLeod Web Migration</h3>
-      <p>Leading the migration of ~80 users to a web-based TMS, including testing, issue tracking, training, rollout planning, and coordination across operations.</p>
-      <p class="entry-meta">TMS Software · Change management · Vendor coordination</p>
-    </article>
+      <article class="work-entry">
+        <h3>McLeod Web Migration</h3>
+        <p>Leading the migration of ~80 users to a web-based TMS, including testing, issue tracking, training, rollout planning, and coordination across operations.</p>
+        <p class="entry-meta">TMS Software · Change management · Vendor coordination</p>
+      </article>
 
-    <article class="work-entry">
-      <h3>Technology ROI &amp; Roadmap</h3>
-      <p>Built a technology ROI and impact review covering 10+ platforms, completed projects, active initiatives, and future automation opportunities for leadership.</p>
-      <p class="entry-meta">ROI analysis · Technology strategy</p>
-    </article>
+      <article class="work-entry">
+        <h3>Technology ROI &amp; Roadmap</h3>
+        <p>Built a technology ROI and impact review covering 10+ platforms, completed projects, active initiatives, and future automation opportunities for leadership.</p>
+        <p class="entry-meta">ROI analysis · Technology strategy</p>
+      </article>
 
-    <article class="work-entry">
-      <h3>AI Governance</h3>
-      <p>Developed the company's first formal AI usage policy, including guidance around approved tools, notetakers, data handling, and Shadow AI risk.</p>
-      <p class="entry-meta">AI governance · Policy development · Risk management</p>
-    </article>
+      <article class="work-entry">
+        <h3>AI Governance</h3>
+        <p>Developed the company's first formal AI usage policy, including guidance around approved tools, notetakers, data handling, and Shadow AI risk.</p>
+        <p class="entry-meta">AI governance · Policy development · Risk management</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="work wrap" id="impact">
+    <div class="section-label">Impact</div>
+    <h2>Impact</h2>
+
+    <div class="impact-grid">
+      <div class="impact-card">
+        <div class="stat">80 users</div>
+        <div class="stat-src">TMS Web migration, project management, training, and rollout</div>
+      </div>
+      <div class="impact-card">
+        <div class="stat">10+ platforms</div>
+        <div class="stat-src">Technology ROI, vendor evaluation, and automation roadmap</div>
+      </div>
+      <div class="impact-card">
+        <div class="stat">Reduced manual touchpoints</div>
+        <div class="stat-src">Carrier compliance and fraud-prevention workflows redesigned across the load lifecycle</div>
+      </div>
+      <div class="impact-card">
+        <div class="stat">~200 hours/year saved</div>
+        <div class="stat-src">Removed 30–60 seconds of manual work across ~16,400 annualized shipments</div>
+      </div>
+      <div class="impact-card">
+        <div class="stat">Production AI deployed</div>
+        <div class="stat-src">Browser-based document automation used in carrier operations</div>
+      </div>
+      <div class="impact-card">
+        <div class="stat">Formal AI governance</div>
+        <div class="stat-src">Company-wide policy covering approved tools, data handling, and Shadow AI risk</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="route wrap" id="career">
+    <div class="section-label">Career Path</div>
+    <div class="track">
+      <div class="waypoint">
+        <div class="waypoint-card">
+          <div class="yr">Early career</div>
+          <h3>Carrier Operations &amp; Asset Division</h3>
+          <p>Ran day-to-day operations for the company's asset-based fleet.</p>
+        </div>
+      </div>
+      <div class="waypoint">
+        <div class="waypoint-card">
+          <div class="yr">Mid career</div>
+          <h3>Business Support Analyst</h3>
+          <p>Led a TMS migration across 60 users, end to end.</p>
+        </div>
+      </div>
+      <div class="waypoint">
+        <div class="waypoint-card">
+          <div class="yr">Finance and Technology chapter</div>
+          <h3>Finance &amp; Accounting Manager, then Director of Finance &amp; Technology</h3>
+          <p>Owned finance operations plus technology vendors and integrations.</p>
+        </div>
+      </div>
+      <div class="waypoint current">
+        <div class="waypoint-card">
+          <div class="yr">Since Jan 2026</div>
+          <h3>Director of Technology Solutions &amp; Integrations</h3>
+          <p>TMS integrations, AI automation, and vendor strategy across the brokerage.</p>
+        </div>
+      </div>
+    </div>
   </section>
 
   <section class="work wrap" id="exploring">
-    <div class="section-label">Interests</div>
+    <div class="section-label">Exploring</div>
     <h2>What I'm Exploring</h2>
 
-    <article class="work-entry">
-      <h3>Local LLMs</h3>
-      <p>Running Qwen locally on a Mac mini to better understand private, on-device AI and where local models can fit into business workflows.</p>
-      <p class="entry-meta">Qwen · LM Studio · Local inference · API testing</p>
-    </article>
+    <div class="card-grid">
+      <article class="work-entry">
+        <h3>Local LLMs</h3>
+        <p>Running Qwen locally on a Mac mini to better understand private, on-device AI and where local models can fit into business workflows.</p>
+        <p class="entry-meta">Qwen · LM Studio · Local inference · API testing</p>
+      </article>
 
-    <article class="work-entry">
-      <h3>AI &amp; Automation</h3>
-      <p>Building my understanding of LLMs, transformers, embeddings, attention, agents, and workflow automation with a focus on practical logistics use cases.</p>
-      <p class="entry-meta">Claude · ChatGPT · Power Automate</p>
-    </article>
+      <article class="work-entry">
+        <h3>AI &amp; Automation</h3>
+        <p>Building my understanding of LLMs, transformers, embeddings, attention, agents, and workflow automation with a focus on practical logistics use cases.</p>
+        <p class="entry-meta">Claude · ChatGPT · Power Automate</p>
+      </article>
 
-    <article class="work-entry">
-      <h3>Data &amp; Analytics</h3>
-      <p>Continuing to sharpen my skills in SQL, Power BI, Python, and data visualization to better connect operational data with decision-making.</p>
-      <p class="entry-meta">SQL · Power BI · Python · LinkedIn Learning</p>
-    </article>
+      <article class="work-entry">
+        <h3>Data &amp; Analytics</h3>
+        <p>Continuing to sharpen my skills in SQL, Power BI, Python, and data visualization to better connect operational data with decision-making.</p>
+        <p class="entry-meta">SQL · Power BI · Python · LinkedIn Learning</p>
+      </article>
 
-    <article class="work-entry">
-      <h3>Continuous Improvement</h3>
-      <p>Studying process improvement and Six Sigma concepts to add more structure to how I identify waste, measure impact, and prioritize automation opportunities.</p>
-      <p class="entry-meta">Lean Six Sigma · Process Mapping · KPI Design</p>
-    </article>
+      <article class="work-entry">
+        <h3>Continuous Improvement</h3>
+        <p>Studying process improvement and Six Sigma concepts to add more structure to how I identify waste, measure impact, and prioritize automation opportunities.</p>
+        <p class="entry-meta">Lean Six Sigma · Process Mapping · KPI Design</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="stack wrap" id="tools">
+    <div class="section-label">Tools</div>
+    <h2>What I work with.</h2>
+    <div class="chip-row">
+      <span class="chip">McLeod TMS</span>
+      <span class="chip">SQL</span>
+      <span class="chip">Power Automate</span>
+      <span class="chip">Claude / Claude Code</span>
+      <span class="chip">Microsoft 365</span>
+      <span class="chip">SharePoint</span>
+      <span class="chip">Power BI</span>
+      <span class="chip">APIs &amp; Integrations</span>
+      <span class="chip">GitHub</span>
+      <span class="chip">Local LLMs</span>
+    </div>
   </section>
 
   <section class="writing wrap" id="writing">
@@ -142,12 +231,6 @@
     </div>
   </section>
 
-  <section class="stack wrap" id="stack">
-    <div class="section-label">Tools &amp; technology</div>
-    <h2>What I work with.</h2>
-    <p class="tag-line">McLeod TMS<span class="sep">·</span>SQL<span class="sep">·</span>Power Automate<span class="sep">·</span>Claude / Claude Code<span class="sep">·</span>Microsoft 365<span class="sep">·</span>SharePoint<span class="sep">·</span>Power BI<span class="sep">·</span>APIs &amp; Integrations<span class="sep">·</span>GitHub<span class="sep">·</span>Local LLMs</p>
-  </section>
-
   <section class="contact wrap" id="contact">
     <div class="section-label">Contact</div>
     <h2>Let's talk logistics, tech, or both.</h2>
@@ -155,13 +238,6 @@
     <a class="btn primary" href="mailto:jpryan542@gmail.com">jpryan542@gmail.com</a>
   </section>
 </main>
-
-<footer>
-  <div class="wrap">
-    <span>© 2026 — Built &amp; deployed via GitHub Pages</span>
-    <span>Chicago, IL</span>
-  </div>
-</footer>
 
 </body>
 </html>
